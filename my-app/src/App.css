@@ -1,12 +1,4 @@
 
-/* .Profile-picture{
-position: absolute;
-width: 156px;
-height: 156.5px;
-left: 50px;
-top: 144px;
-} */
-
 /* Global */
 body {
   margin: 0;
@@ -19,8 +11,16 @@ nav {
 }
 
 .brand-first {
+  font-family: "Jost", sans-serif;
   color: #c37052;
   font-weight: 600;
+  font-size: 21px;
+}
+.brand-second{
+  font-family: "Jost", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 21px;
 }
 
 nav ul li {
@@ -36,27 +36,43 @@ nav ul li.active {
   color: #c37052;
 }
 
-/* Contact button */
+/* Contact button typography */
 .contact-btn {
   background-color: #c37052;
   color: white;
-  padding: 8px 16px;
+  padding: 8px 18px;
   border-radius: 6px;
-  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;        /* SemiBold */
+  font-size: 20px;
+  line-height: normal;     /* Auto */
+  letter-spacing: 0%;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s ease;
 }
+
+.contact-btn:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Hero left section */
 .hero-left {
   background-color: #b8ca93;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  color: azure;
+  padding-left: 1.7%;
 }
 
 /* Profile picture */
 .profile-picture {
-  width: 100px;
-  height: 100px;
-  border-radius: 10%;
-  object-fit: fill;
-  margin-bottom: 32px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
   border: 4px solid white;
 }
 
@@ -64,10 +80,11 @@ nav ul li.active {
 .explore-btn {
   margin-top: 32px;
   background-color: white;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
   color: #333;
-  padding: 12px 24px;
   border-radius: 6px;
-  font-weight: 600;
+  font-weight: 500;
   width: fit-content;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
@@ -83,12 +100,122 @@ nav ul li.active {
 .kanit-heading {
   font-family: "Kanit", sans-serif;
   font-weight: 700;          /* Bold */
-  font-size: 15px;
+  font-size: 20px;
   line-height: normal;       /* Auto */
   letter-spacing: 0%;
   text-align: left;
 }
+.josh-heading {
+  font-family: "Jost", sans-serif;
+  line-height: normal;     
+  font-size: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  width: 100%;
+  max-width: 1512px;
+  height: 67px;
+
+  margin: 0 auto;
+  background-color: white;
+  border-bottom: 1px solid #e6e6e6;
+
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: 1512px;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Navigation links */
+.nav-links {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;      /* Regular */
+  font-size: 16px;       /* or whatever matches your design */
+  line-height: normal;
+  letter-spacing: 0%;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-links li:hover {
+  color: #c37052;
+}
+
+.nav-links li.active {
+  font-weight: 500;      /* Slight emphasis only */
+  color: #c37052;
+}
 
 
 
+.hero-wrapper {
+  width: 100%;
+  max-width: 1512px;
+  height: 544px;
 
+  margin: 0 auto;
+  display: flex;
+}
+.hero-left {
+  width: calc(1512px - 724px);
+  height: 544px;
+
+  background-color: #b8ca93;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-right {
+  width: 724px;
+  height: 544px;
+}
+.hero-left h2 {
+  margin: 0 0 12px 0;
+  font-family: "Kanit", sans-serif;
+  font-size: 35px; 
+  font-weight: 700; 
+  
+}
+
+.hero-left p {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.hero-right img {
+  width: 724px;
+  height: 544px;
+  object-fit: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
