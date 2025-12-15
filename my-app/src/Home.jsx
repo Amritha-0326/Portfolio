@@ -15,15 +15,56 @@ export default function HeroSection() {
       <span className="brand-second"> P Anil</span>
     </div>
 
-    <ul className= "nav-links">
-      <li className="active">Home</li>
-      <li>About</li>
-      <li>Portfolio</li>
-      <li>Skills</li>
-      <li>Passion</li>
-    </ul>
+    <ul className="nav-links">
+  <li
+    className="active"
+    onClick={() =>
+      document.getElementById("home")?.scrollIntoView({ behavior: "smooth" })
+    }
+  >
+    Home
+  </li>
 
-    <button className="contact-btn">Contact Me</button>
+  <li
+    onClick={() =>
+      document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
+    }
+  >
+    About
+  </li>
+
+  <li
+    onClick={() =>
+      document.getElementById("portfolio")?.scrollIntoView({ behavior: "smooth" })
+    }
+  >
+    Portfolio
+  </li>
+
+  <li
+    onClick={() =>
+      document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" })
+    }
+  >
+    Skills
+  </li>
+
+  <li
+    onClick={() =>
+      document.getElementById("passion")?.scrollIntoView({ behavior: "smooth" })
+    }
+  >
+    Passion
+  </li>
+</ul>
+
+
+    <button onClick={() =>
+    document
+      .getElementById("connect-section")
+      .scrollIntoView({ behavior: "smooth" })
+  }
+  className="contact-btn">Contact Me</button>
   </div>
 </nav>
 

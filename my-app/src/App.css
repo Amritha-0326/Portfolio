@@ -36,6 +36,8 @@ nav ul li.active {
   color: #c37052;
 }
 
+
+
 /* Contact button typography */
 .contact-btn {
   background-color: #c37052;
@@ -83,10 +85,13 @@ nav ul li.active {
   font-family: "Jost", sans-serif;
   font-size: 20px;
   color: #333;
+  border: none;
+  outline: none; 
   border-radius: 6px;
-  font-weight: 500;
+  font-weight: 600;
   width: fit-content;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  box-shadow: 0 0 0;
 }
 
 /* Right image */
