@@ -32,7 +32,7 @@ function PortfolioSection() {
           description="A concept I designed to explore how digital tools can guide customers through more personalized beauty choices."
         />
         </a>
-        <a hef = "https://www.figma.com/proto/utReJDidzyNvaogwRRUqTR/Mobile-Wellness-App?node-id=1-3&t=T7gQ4Y8xi0blff9M-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer">
+        <a href = "https://www.figma.com/proto/utReJDidzyNvaogwRRUqTR/Mobile-Wellness-App?node-id=1-3&t=T7gQ4Y8xi0blff9M-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer">
         <ProjectCard
           image={WellnessPic}
           title="Mobile Wellness App"
