@@ -7,38 +7,35 @@ body {
   /* Heading style */
   .josh-heading {
     font-family: "Jost", sans-serif;
-    font-weight: 600;          /* SemiBold */
-    font-size: 30px;
-    line-height: normal;       /* Auto */
-    letter-spacing: 0%;
-    text-align: center;        /* FIXED */
-  }
-
-  .about {
-    width: 724px;
-    height: 544px;
-    margin: 0 auto;
+    font-weight: 600;
+    font-size: clamp(22px, 4vw, 30px);
+    text-align: center;
   }
   
-  /* Overview Card */
+  .about {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
   .overview-card {
-    width: 350px;
+    width: 100%;
     min-height: 220px;
     background-color: #ffffff;
     border-top: 20px solid #4C5C68;
     border-radius: 15px;
-    overflow: hidden; 
     padding: 24px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 15px;
+    margin-right: 15px;
   }
-  
-.overview-cards-container {
-  display: flex;
-  justify-content: center;
-  gap: 75px;
-  margin-top: 48px;
-}
 
+.overview-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 75px;
+  margin-top: 40px;
+}
 
 /* Icon */
 .overview-icon {
@@ -68,14 +65,13 @@ body {
   line-height: 2.0;
 }
 
-
-
 .adjectives-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
-  margin-top: 48px;
+  gap: 16px;
 }
+
 
 .adjective-box {
   width: 150px;
@@ -85,6 +81,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 48px;
 
   font-family: "Jost", sans-serif;
   font-weight: 700; /* Bold */
@@ -110,4 +107,25 @@ body {
   font-size: 16px;
   color: #ffffff;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .overview-cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-title {
+    font-size: 22px;
+  }
+
+  .overview-description-text {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .adjective-box {
+    width: auto;
+    padding: 0 16px;
+  }
 }
