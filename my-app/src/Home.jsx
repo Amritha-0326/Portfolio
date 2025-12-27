@@ -43,7 +43,7 @@ export default function HeroSection() {
 
   <li
     onClick={() =>
-      document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" })
+      document.getElementById("certificates")?.scrollIntoView({ behavior: "smooth" })
     }
   >
     Skills
