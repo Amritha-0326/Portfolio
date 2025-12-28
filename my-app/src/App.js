@@ -3,6 +3,7 @@ import HeroSection from "./Home";
 import AboutPage from "./AboutPage";
 import PortfolioSection from "./Portfolio";
 import FunProjects from "./FunProjects";
+import FunProjectsGallery from "./FunProjectsGallery"
 import PassionSection from "./PersonalPassion";
 import ConnectSection from "./LetsConnect";
 import Certificate from "./Certificate";
@@ -14,6 +15,7 @@ export default function App() {
       <PortfolioSection />
       <Certificate />
       <FunProjects />
+      <FunProjectsGallery />
       <PassionSection />
       <ConnectSection />
     </>

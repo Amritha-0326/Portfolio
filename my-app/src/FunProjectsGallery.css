@@ -1,0 +1,102 @@
+.gallery-section {
+    padding: 4rem 1.5rem 6rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Deck layout */
+  .card-deck {
+    position: relative;
+    width: 320px;
+    height: 420px;
+  }
+  
+  /* Cards */
+  .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 380px;
+    background: white;
+    border-radius: 18px;
+    border: 6px solid white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    transform: translateX(calc(var(--i) * 20px))
+      translateY(calc(var(--i) * 10px))
+      rotate(calc(var(--i) * -2deg));
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  /* Hover effect */
+  .card:hover {
+    transform: translateY(-15px) scale(1.05);
+    z-index: 10;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Modal */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    position: relative;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 20px;
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-content img {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 14px;
+    border: 6px solid white;
+  }
+  
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #111;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Mobile tweaks */
+  @media (max-width: 768px) {
+    .card-deck {
+      width: 260px;
+      height: 360px;
+    }
+  
+    .card {
+      width: 240px;
+      height: 320px;
+    }
+  }
+  
