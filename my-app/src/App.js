@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "./Home";
 import AboutPage from "./AboutPage";
 import PortfolioSection from "./Portfolio";
+import FunProjects from "./FunProjects";
 import PassionSection from "./PersonalPassion";
 import ConnectSection from "./LetsConnect";
 import Certificate from "./Certificate";
@@ -12,6 +13,7 @@ export default function App() {
       <AboutPage />
       <PortfolioSection />
       <Certificate />
+      <FunProjects />
       <PassionSection />
       <ConnectSection />
     </>

@@ -1,4 +1,5 @@
 import "./Certificate.css";
+import certificateIllustration from "./certificate-illustration.png"
 
 const certificates = [
   {
@@ -67,8 +68,7 @@ export default function Certificate() {
       <div className="certificate-grid">
         {certificates.map((item, index) => (
           <div key={index} className={`certificate-card ${item.color}`}>
-            <div className="certificate-icon" />
-
+            <img src={certificateIllustration} alt="Certificate-Illustration" className="certificate-icon" />
             <h3>{item.title}</h3>
             <h4>{item.provider}</h4>
 
