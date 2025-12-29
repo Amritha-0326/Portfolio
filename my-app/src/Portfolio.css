@@ -1,19 +1,20 @@
 .portfolio-section {
   background-color: #ECECEC;
-  padding: 70px 0;
+  padding: 40px 20px;
   margin-top: 10%;
 }
 .portfolio-heading {
   text-align: center;
   font-family: "Jost", sans-serif;
   font-weight: 700;
-  font-size: 27px;
+  font-size: 36px;
   color: #4C5C68;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 .projects-container {
-  display: flex;
+  display: grid;
   justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
   gap: 45px;
 }
 .project-card {
@@ -66,4 +67,31 @@
   color: #C37052;
   cursor: pointer;
 }
-              
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-heading {
+    font-size: 22px;
+  }
+
+  .project-image {
+    height: 220px;
+  }
+
+  .project-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .project-overlay {
+    width: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .project-link {
+    font-size: 22px;
+  }
+}
