@@ -32,7 +32,7 @@ const certificates = [
     title: "Unit Testing in React.js: Create a Unit Test Suite",
     provider: "Coursera",
     description:
-      "Understanding user behavior, cognitive psychology, and interaction design principles.",
+      "This project focuses on building high-quality, reliable React applications through comprehensive unit testing. It explores core testing principles using React Testing Library by developing an extensive test suite for a real-world movie search application that consumes API data and renders dynamic UI states.",
     year: "Completed 2025",
     color: "beige",
     link: "https://coursera.org/share/489f522143b954e11686213c8728e81f",

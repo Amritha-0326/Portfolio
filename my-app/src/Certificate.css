@@ -30,6 +30,7 @@
   /* Card */
   .certificate-card {
     font-family: "Jost", sans-serif;
+    display: flex;
     flex-direction: column;
     border-radius: 14px;
     padding: 25px;
@@ -43,7 +44,6 @@
     height: 48px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.25);
-    /* margin-bottom: 20px; */
     filter: invert(1);
   }
   
@@ -63,7 +63,7 @@
     font-family: "Jost", sans-serif;
     font-size: 15px;
     line-height: 1.6;
-    margin-bottom: 28px;
+    flex-grow: 0;
   }
   
   
@@ -107,6 +107,7 @@
     justify-content: space-between;
     gap: 12px;
     padding-top: 16px;
+    /* padding-bottom: 16px; */
     border-top: 1px solid rgba(255, 255, 255, 0.25);
   }
   
