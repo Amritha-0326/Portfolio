@@ -1,10 +1,18 @@
 import React from "react";
 import "./App.css";
-import downloadPDF from "./Pdf";
 
 import ProfilePic from './profile-picture.jpg';
 import TileDesign from './Abstract-geometry-tile.jpg'
-// import PortfolioPDF from "./Amritha-UX-Portfolio.pdf";
+
+
+import PortfolioPDF from "./Amritha_Portfolio.pdf";
+
+const downloadPDF = () => {
+  const link = document.createElement("a");
+  link.href = PortfolioPDF;
+  link.download = "Amritha-UX-Portfolio.pdf";
+  link.click();
+};
 
 
 export default function HeroSection() {
@@ -85,22 +93,10 @@ export default function HeroSection() {
       UX Designer solving complex problems with simple interactions
     </p>
 
-    {/* <button className="explore-btn"
-    onClick={() =>
-      document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
-    }>
-      Explore my world
-    </button> */}
-    {/* <button onClick={downloadPDF} className="explore-btn">
-        Download Portfolio
-    </button> */}
-    <a
-      href="/Amritha-UX-Portfolio.pdf"
-      download
-      className="explore-btn"
-    >
+    <button onClick={downloadPDF} className="explore-btn">
       Download Portfolio
-    </a>
+    </button>
+
 
   </div>
 
