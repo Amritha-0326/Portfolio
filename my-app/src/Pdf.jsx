@@ -1,0 +1,36 @@
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
+
+export default function downloadPDF() {
+    const element = document.getElementById("portfolio-root");
+  
+    html2canvas(element, {
+      scale: 2,
+      useCORS: true,
+      backgroundColor: "#ffffff",
+    }).then((canvas) => {
+      const imgData = canvas.toDataURL("image/png");
+      const pdf = new jsPDF("p", "mm", "a4");
+  
+      const pageWidth = 210;
+      const pageHeight = 297;
+  
+      const imgHeight = (canvas.height * pageWidth) / canvas.width;
+  
+      let heightLeft = imgHeight;
+      let position = 0;
+  
+      pdf.addImage(imgData, "PNG", 0, position, pageWidth, imgHeight);
+      heightLeft -= pageHeight;
+  
+      while (heightLeft > 0) {
+        position -= pageHeight;
+        pdf.addPage();
+        pdf.addImage(imgData, "PNG", 0, position, pageWidth, imgHeight);
+        heightLeft -= pageHeight;
+      }
+  
+      pdf.save("Amritha-UX-Portfolio.pdf");
+    });
+  }
+  

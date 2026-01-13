@@ -1,8 +1,11 @@
 import React from "react";
 import "./App.css";
+import downloadPDF from "./Pdf";
 
 import ProfilePic from './profile-picture.jpg';
 import TileDesign from './Abstract-geometry-tile.jpg'
+// import PortfolioPDF from "./Amritha-UX-Portfolio.pdf";
+
 
 export default function HeroSection() {
   return (
@@ -82,12 +85,23 @@ export default function HeroSection() {
       UX Designer solving complex problems with simple interactions
     </p>
 
-    <button className="explore-btn"
+    {/* <button className="explore-btn"
     onClick={() =>
       document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
     }>
       Explore my world
-    </button>
+    </button> */}
+    {/* <button onClick={downloadPDF} className="explore-btn">
+        Download Portfolio
+    </button> */}
+    <a
+      href="/Amritha-UX-Portfolio.pdf"
+      download
+      className="explore-btn"
+    >
+      Download Portfolio
+    </a>
+
   </div>
 
   <div className="hero-right">

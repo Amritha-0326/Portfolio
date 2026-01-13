@@ -7,8 +7,11 @@ import FunProjectsGallery from "./FunProjectsGallery"
 import PassionSection from "./PersonalPassion";
 import ConnectSection from "./LetsConnect";
 import Certificate from "./Certificate";
+
+
 export default function App() {
   return (
+    <div id="portfolio-root">
     <>
       <HeroSection />
       <AboutPage />
@@ -19,5 +22,7 @@ export default function App() {
       <PassionSection />
       <ConnectSection />
     </>
+    </div>
   );
 }
+

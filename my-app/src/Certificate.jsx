@@ -1,5 +1,4 @@
 import "./Certificate.css";
-import certificateIllustration from "./certificate-illustration.png"
 
 const certificates = [
   {

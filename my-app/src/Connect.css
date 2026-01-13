@@ -1,92 +1,91 @@
 /* SECTION */
 .connect-section {
-    display: flex;
-    justify-content: center;
-    padding: 80px 0;
-  }
-  
-  /* MAIN RECTANGLE */
-  .connect-container {
-    width: 1512px;
-    height: 550px;
-    background-color: #4c5c68;
-    position: relative;
-    text-align: center;
-  }
-  
-  /* TITLE */
-  .connect-title {
-    font-family: "Jost", sans-serif;
-    font-weight: 600; /* Semibold */
-    font-size: 32px;
-    color: #ffffff;
-    margin-top: 40px;
-  }
-  
-  /* CONTACT CARD */
-  .contact-card {
-    width: 350px;
-    height: 242px;
-    background-color: #ffffff;
-    border-top: 14px solid #abc686;
-    border-radius: 16px;
-    margin: 40px auto 0 auto;
-    padding: 24px;
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
-    text-align: left;
-  }
-  
-  /* CONTACT HEADING */
-  .contact-heading {
-    font-family: "Jost", sans-serif;
-    font-weight: 700;
-    font-size: 23px;
-    margin-bottom: 16px;
-  }
-  
-  /* CONTACT ITEMS */
-  .contact-item {
-    margin-bottom: 16px;
-  }
-  
-  /* LABEL */
-  .contact-label {
-    display: block;
-    font-family: "Jost", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    margin-bottom: 4px;
-  }
-  
-  /* VALUE */
-  .contact-value {
-    font-family: "Jost", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-  }
-  
-  /* SOCIAL ICONS */
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 28px;
-    margin-top: 40px;
-  }
-  
-  .social-icon {
-    width: 50px;
-    height: 50px;
-    background-color: #abc686; /* circle background */
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .icon-img {
-    max-width: 60%;
-    max-height: 60%;
-    object-fit: contain;
-    filter: brightness(0) invert(1); 
-  }
-  
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+/* MAIN RECTANGLE */
+.connect-container {
+  width: 1512px;
+  height: 550px;
+  background-color: #4c5c68;
+  position: relative;
+  text-align: center;
+}
+
+/* TITLE */
+.connect-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 600; /* Semibold */
+  font-size: 32px;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+/* CONTACT CARD */
+.contact-card {
+  width: 350px;
+  height: 242px;
+  background-color: #ffffff;
+  border-top: 14px solid #abc686;
+  border-radius: 16px;
+  margin: 40px auto 0 auto;
+  padding: 24px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+/* CONTACT HEADING */
+.contact-heading {
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  margin-bottom: 16px;
+}
+
+/* CONTACT ITEMS */
+.contact-item {
+  margin-bottom: 16px;
+}
+
+/* LABEL */
+.contact-label {
+  display: block;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+/* VALUE */
+.contact-value {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #abc686; /* circle background */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-img {
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+  filter: brightness(0) invert(1); 
+}
