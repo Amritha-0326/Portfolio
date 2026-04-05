@@ -1,4 +1,5 @@
 import React from "react";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import HeroSection from "./Home";
 import AboutPage from "./AboutPage";
 import PortfolioSection from "./Portfolio";
@@ -22,6 +23,7 @@ export default function App() {
       <PassionSection />
       <ConnectSection />
     </>
+    <SpeedInsights />
     </div>
   );
 }

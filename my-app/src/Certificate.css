@@ -65,8 +65,7 @@
     line-height: 1.6;
     flex-grow: 0;
   }
-  
-  
+
   /* Color variants */
   .certificate-card.green {
     background: #8b9a7a;
