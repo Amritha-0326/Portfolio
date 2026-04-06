@@ -1,12 +1,12 @@
 import "./About.css";
 
-function OverviewIcon({ children }) {
-    return (
-      <div className="absolute left-[12px] top-[24px] size-[57px]">
-        {children}
-      </div>
-    );
-  }
+// function OverviewIcon({ children }) {
+//     return (
+//       <div className="absolute left-[12px] top-[24px] size-[57px]">
+//         {children}
+//       </div>
+//     );
+//   }
   
   function OverviewCard({ title, description, icon }) {
     return (

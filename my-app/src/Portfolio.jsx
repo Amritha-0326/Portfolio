@@ -1,7 +1,6 @@
 import React from "react";
 import "./Portfolio.css";
 import PerfumePic from './perfume.jpg';
-import WellnessPic from './wellness.jpg';
 import CoffeePic from './coffee.jpg'
 import BarApp from './MenuBanner.png'
 
