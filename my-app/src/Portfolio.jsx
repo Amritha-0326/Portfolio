@@ -3,6 +3,7 @@ import "./Portfolio.css";
 import PerfumePic from './perfume.jpg';
 import WellnessPic from './wellness.jpg';
 import CoffeePic from './coffee.jpg'
+import BarApp from './MenuBanner.png'
 
 function ProjectCard({ image, title, description }) {
   return (
@@ -42,6 +43,15 @@ function PortfolioSection() {
       <h2 className="portfolio-heading">Featured Projects</h2>
 
       <div className="projects-container">
+      <a href = "https://cocktail-bar-experience-react.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <ProjectCard
+          image={BarApp}
+          title="Cocktail Bar Website"
+          description="A concept I designed to give user arriving at a glamorous bar at midnight, not rushing users, but guiding them smoothly toward: Discovering the bar’s mood, Exploring the menu, Making a reservation."
+        />
+      </a>
+
+      
       <a href="https://www.figma.com/proto/6WvwctP0L76cmqG0woFHs1/Virtual_perfume_assist?node-id=1-2&p=f&t=QnYtrg26OebWGQQc-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank" rel="noopener noreferrer">
         <ProjectCard
           image={PerfumePic}
@@ -50,13 +60,13 @@ function PortfolioSection() {
         />
         </a>
         
-        <a href = "https://www.figma.com/proto/kcpFBFmGwgGD0ohDgUcQsE/mobile-wellness-app?node-id=1-2&p=f&t=F8fB9M7fpSYpBhaw-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer">
+        {/* <a href = "https://www.figma.com/proto/kcpFBFmGwgGD0ohDgUcQsE/mobile-wellness-app?node-id=1-2&p=f&t=F8fB9M7fpSYpBhaw-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer">
         <ProjectCard
           image={WellnessPic}
           title="Mobile Wellness App"
           description="A concept I designed to explore how digital tools can guide customers through more personalized beauty choices."
         />
-        </a>
+        </a> */}
 
         <a href="https://www.figma.com/proto/ApBxmJnZ91nJy7Hey53dMf/Coffee-shop-app?node-id=1-2&t=1wM9XcIowVqyQX9V-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer">
         <ProjectCard
